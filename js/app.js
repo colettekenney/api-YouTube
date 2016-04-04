@@ -15,7 +15,7 @@ $(document).ready(function() {
 		$.each(results, function(index, value) {
 			videoBox += '<li><a href="https://www.youtube.com/watch?v='+value.id.videoId
 						+'"><img border="1" src="'+value.snippet.thumbnails.high.url
-						+'" width"480" height="360"></a>'+"</li>"
+						+'" ></a>'+"</li>"
 		});
 		$('#search-results').html(videoBox);
 	}

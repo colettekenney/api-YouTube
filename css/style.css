@@ -27,7 +27,7 @@ ol, ul {
 body {
   background-color: #f8f8f8;
   width: 100%;
-  margin: 20px 0;
+  margin: 5% 0;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -62,9 +62,26 @@ body {
   list-style-type: none;
 }
 
+#search-results img {
+    width: 480px;
+    height: 360px;
+  }
+
 @media screen and (max-width: 500px) {
-  #wrapper {
-    width: 100%;
+  
+  body, #wrapper {
+    width: 400px;
+    margin: auto;
+  }
+
+  .submit {
+    width: 90%;
+    margin: 10px;
+  }
+
+  #search-results img {
+    width: 320px;
+    height: 180px;
   }
 }
 
