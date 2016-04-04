@@ -1,0 +1,71 @@
+html, body, nav, header, section, 
+aside, footer, div, span, h1, h2, 
+h3, h4, h5, h6, p, ol, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+/**div {
+  border: 1px solid #ddd;
+}**/
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+ol, ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/** START OF CUSTOM STYLES **/
+
+body {
+  background-color: #f8f8f8;
+  width: 100%;
+  margin: 20px 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#wrapper {
+  width: 70%;
+  margin: 0 auto 10px;
+  text-align: center;
+  font-family: 'Montserrat';  
+  position: relative;
+  border: 1px solid gray;
+}
+
+#wrapper h1 {
+  font-size: 26px;
+  padding: 10px;
+}
+ 
+#wrapper h2, #search-term {
+  font-size: 22px;
+  padding: 0 0 10px;
+}
+
+#search-term {
+  font-size: 20px;
+  color: #888;
+}
+#search-results {
+  min-height: 900px;
+}
+#search-results li {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 500px) {
+  #wrapper {
+    width: 100%;
+  }
+}
+
+
