@@ -32,21 +32,21 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-#wrapper {
-  width: 70%;
-  margin: 0 auto 10px;
+.wrapperForm, .wrapperVideos {
+  width: 80%;
+  margin: 0.5% auto;
   text-align: center;
   font-family: 'Montserrat';  
   position: relative;
   border: 1px solid gray;
 }
 
-#wrapper h1 {
+.wrapperForm h1 {
   font-size: 26px;
   padding: 10px;
 }
  
-#wrapper h2, #search-term {
+.wrapperForm h2, #search-term {
   font-size: 22px;
   padding: 0 0 10px;
 }
@@ -56,16 +56,36 @@ body {
   color: #888;
 }
 #search-results {
-  min-height: 900px;
+  min-height: 230px;
+
 }
 #search-results li {
   list-style-type: none;
+  position: relative;
+  float: left;
+  max-width: 19%;
+  margin: 0.5%;
+}
+
+#search-results a {
+  text-decoration: none;
+  color: #444;
 }
 
 #search-results img {
-    width: 480px;
-    height: 360px;
+    max-width: 100%;
   }
+
+#search-results p {
+  max-width: 320px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#next {
+  max-width: 25%;
+  margin: 3.5% auto 0.5%;
+}
 
 @media screen and (max-width: 500px) {
   
