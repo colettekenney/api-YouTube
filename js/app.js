@@ -18,11 +18,15 @@ $(document).ready(function() {
 						'" >'+value.snippet.title+ "</a></li>"
 		});
 		$('#search-results').html(videoBox);
-		//$('#search-results #next').html("<button>Next</button>");
+		
 	}
 
-	$('#next button').click(function() {
+	/*$('#next button').click(function() {
+		$.getJSON('https://www.googleapis.com/youtube/v3/search?key=AIzaSyCNbGywn33k_DWXjTntQlWSGybDADgcNbQ&part=snippet&q='+searchTerm, function(data) {
+		console.log(data);
+		showResults(data.items);
+
 		showResults(data.nextPageToken)
-	});
+	});*/
 
 });
